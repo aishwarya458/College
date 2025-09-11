@@ -1,0 +1,127 @@
+
+
+.table-card {
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(17,24,39,0.06);
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.students-table thead th {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #6b7a90;
+  border-bottom: 1px solid #e6e9ef;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+
+.students-table tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f4f8;
+  color: #2c3e50;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+
+.students-table tbody tr:hover {
+  background: #fbfdff;
+}
+
+
+.actions-col {
+  width: 170px;
+  white-space: nowrap;
+}
+
+
+.action {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.action.edit {
+  background: #f7b267;
+  color: #ffffff;
+}
+
+.action.delete {
+  background: #e74c3c;
+  color: #ffffff;
+}
+
+
+@media (max-width: 900px) {
+  .students-table thead th,
+  .students-table tbody td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .students-table {
+    min-width: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .table-card {
+    padding: 10px;
+  }
+
+  .students-table {
+    min-width: 0;
+  }
+
+  .students-table thead {
+    display: none;
+  }
+
+  .students-table tbody tr {
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid #e6e9ef;
+    border-radius: 8px;
+    padding: 8px;
+    background: #ffffff;
+  }
+
+  .students-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 6px;
+    border-bottom: none;
+    font-size: 13px;
+  }
+
+  .students-table tbody td:nth-child(1)::before { content: "Name"; font-weight:700; color:#6b7a90; margin-right:8px; }
+  .students-table tbody td:nth-child(2)::before { content: "Email"; font-weight:700; color:#6b7a90; margin-right:8px; }
+  .students-table tbody td:nth-child(3)::before { content: "Course"; font-weight:700; color:#6b7a90; margin-right:8px; }
+  .students-table tbody td:nth-child(4)::before { content: "Enrolled"; font-weight:700; color:#6b7a90; margin-right:8px; }
+  .students-table tbody td:nth-child(5)::before { content: "Actions"; font-weight:700; color:#6b7a90; margin-right:8px; }
+
+  .action {
+    margin-right: 6px;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}

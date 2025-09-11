@@ -1,0 +1,55 @@
+.student-wrap {
+  max-width: 700px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid #eef0f5;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 6px;
+  background: #fbfcff;
+  border: 1px solid #eef4ff;
+}
+
+.field-title {
+  font-weight: 600;
+  color: #39445a;
+}
+
+.field-value {
+  color: #17223b;
+}
+
+.form-error {
+  margin-bottom: 10px;
+  color: #a20b0b;
+  background: #fff4f4;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.form-empty {
+  padding: 12px;
+  color: #475467;
+}
+
+@media (max-width: 600px) {
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .field-value {
+    margin-top: 6px;
+  }
+}

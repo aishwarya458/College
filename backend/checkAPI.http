@@ -1,0 +1,46 @@
+### Register a user
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Alice Johnson",
+  "email": "alice@example.com",
+  "password": "securePassword123",
+  "role": "student"
+}
+
+### Register a admin
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Alice Johnson",
+  "email": "admin@example.com",
+  "password": "adminPassword765",
+  "role": "admin"
+}
+
+
+
+### POST login data
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "email": "alice@example.com",
+  "password": "securePassword123"
+}
+
+### POST admin login data
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+"email": "admin@example.com",
+  "password": "adminPassword765"
+}
+
+
+### GET USERS data
+GET http://localhost:3001/admin/students
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NzQ4Njk0MiwiZXhwIjoxNzU3NDkwNTQyfQ.eBPRmGQU_xU5XAhI-1bUWyPVNhH_VvQd6Y3kAr5Y5XQ
